@@ -1,9 +1,33 @@
-body {}
+html, body {
+    height: 100%;
+    margin: 0;
+}
 
 .logo {
   height: 80px;
   width: auto;
 }
+.nav a {
+  text-decoration: none;
+}
+
+.header-container {
+background-color: white;
+text-align: center;
+}
+
+
+.recettes-container {
+  background-color: rgb(170, 183, 144);
+margin: auto;
+padding-left: 7rem;
+padding-right: 7rem;
+}
+.recettes-container p {
+color: rgb(129, 139, 111);
+}
+
+
 .recettes-cards {
     display: flex;
     flex-direction: wrap;
@@ -14,7 +38,20 @@ body {}
 
 .recette-bol {
     background-color: whitesmoke;
-    border: 2 px solid #7db466;
+    border: 3 px solid #7db466;
+    border-radius: 10px;
     padding: 20px;
     width: 280px;
 }
+footer {
+  color: #7db466;
+  background-color: black;
+  height: 5rem;
+}
+
+footer, a {
+    a {
+    color: #7db466;
+  }
+}
+
