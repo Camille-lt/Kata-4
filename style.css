@@ -1,0 +1,20 @@
+body {}
+
+.logo {
+  height: 80px;
+  width: auto;
+}
+.recettes-cards {
+    display: flex;
+    flex-direction: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.recette-bol {
+    background-color: whitesmoke;
+    border: 2 px solid #7db466;
+    padding: 20px;
+    width: 280px;
+}
