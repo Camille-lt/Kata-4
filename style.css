@@ -1,7 +1,16 @@
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('/a set/fonts/InterTight-Regular.woff2') format('woff2'),
+       url('/a set/fonts/InterTight-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   height: 100%;
   margin: 0;
+  font-family: 'Inter Tight', sans-serif;
 }
 
 .logo {
@@ -38,8 +47,9 @@ nav a {
 }
 
 .header-container p {
-  font-size: 1.5rem;
-  color: #1d5523;
+  font-size: 1rem;
+  font-weight:300;
+  color: #5b8927;
 }
 
 /* MAIN */
@@ -48,7 +58,7 @@ nav a {
   margin: auto;
   padding-top: 3rem;
   border-radius: 20px;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
   padding-left: 15rem;
   padding-right: 15rem;
 }
@@ -73,16 +83,25 @@ nav a {
   padding-top: 0;
   width: 300px;
   height: 350px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
-
+/* IMAGES CARDS */
 .recette-bol img {
   width: 100%;
-  height: 150px;
+  height: 150px; 
   object-fit: cover;
-  border-radius: 8px;
   display: block;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.img-bol {
+  object-position: center 60%; /* décale vers le haut pour voir le bas du verre */
+}
+.img-smoothie {
+  object-position: center 37%; /* décale vers le haut pour voir le bas du verre */
+}
+.img-salad {
+    object-position: center 65%; /* décale vers le haut pour voir le bas du verre */
 }
 
 .text-cards {
@@ -92,6 +111,7 @@ nav a {
   padding-bottom: 30px;
   line-height: 5px;
 }
+
 #name {
   padding-top: 20px;
 }
@@ -102,12 +122,15 @@ nav a {
 
 .text-cards p {
   padding-bottom: 20px;
+  font-size: 12px;
+  font-weight: 200;
   margin: auto;
   line-height: 1rem;
 }
 
 .category-btn {
   background-color: rgb(185, 200, 158);
+  font-size: 12px;
   border-radius: 20px;
   margin-top: 10px;
   padding-top: 5px;
